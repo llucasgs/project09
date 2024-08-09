@@ -25,3 +25,25 @@ body {
   background-color: var(--background-color);
   font-size: var(--text);
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  /* Essa valor da propriedade color faz a tag "a" herdar o valor do pai, no caso "body". */
+}
+
+a:hover {
+  color: var(--brand-color);
+  text-decoration: underline;
+}
+
+.container {
+  padding-inline: 32px;
+  /* padding-block pega os espaços internos das laterais */
+  max-width: 1280px;
+  margin-inline: auto;
+}
+
+.bg-surface-color {
+  background-color: var(--surface-color);
+}
